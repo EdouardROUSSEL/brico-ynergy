@@ -18,8 +18,8 @@ export default function Home() {
             <div className="bg-black absolute inset-0 opacity-20"></div>
             <div className="absolute inset-0 flex flex-col justify-between md:p-10 p-4 [text-shadow:_0_1px_0_rgb(0_0_0_/_12%)]">
               <h6 className="text-white font-bold md:text-5xl text-2xl">
-                Pour réduire ma consommation d'énergie, pas besoin de diviser ma
-                maison !
+                Pour réduire ma consommation d&apos;énergie, pas besoin de
+                diviser ma maison !
               </h6>
               <ul className="text-white text-sm md:text-xl font-bold p-2 md:p-8 space-y-2">
                 <li className="flex items-center gap-2 md:gap-4">
