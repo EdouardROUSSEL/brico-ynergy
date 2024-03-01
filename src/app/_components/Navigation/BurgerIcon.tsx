@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Button from "./Button";
 
 export default function burgerIcon() {
   const [isOpen, setIsOpen] = useState(false);
