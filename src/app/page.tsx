@@ -6,7 +6,7 @@ export default function Home() {
     <main className="bg-[#EEEEEE]">
       <section className="lg:container lg:mx-auto lg:px-4 pt-20 h-screen ">
         <div className="grid grid-cols-7 grid-rows-7 w-full h-full relative">
-          <div className="col-span-7 col-start-1 row-start-1 row-span-4 md:row-span-4 relative">
+          <div className="col-span-7 col-start-1 row-start-1 row-span-4 relative">
             <div
               className="bg-[length:270%] md:bg-[length:190%] lg:bg-[length:150%] xl:bg-[length:120%] 2xl:bg-[length:100%] w-full h-full"
               style={{
