@@ -1,9 +1,8 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 
-export default function burgerIcon() {
+export default function BurgerIcon() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenSolution, setIsOpenSolution] = useState(false);
 

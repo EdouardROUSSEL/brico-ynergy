@@ -7,7 +7,7 @@ export default function Home() {
         <div className="grid grid-cols-7 grid-rows-7 w-full h-full relative">
           <div className="col-span-7 col-start-1 row-start-1 row-span-3 relative">
             <h6 className="row-start-1 col-span-3 text-white font-bold text-5xl absolute z-10 p-10 ">
-              Pour réduire ma consommation d'énergie, <br />
+              Pour réduire ma consommation d&apos;énergie, <br />
               pas besoin de diviser ma maison !
             </h6>
             <ul className="absolute z-10">
