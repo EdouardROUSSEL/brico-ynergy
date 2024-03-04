@@ -2,7 +2,7 @@ import Button from "./Navigation/Button";
 
 export default function PACbutton() {
   return (
-    <div className="fixed bottom-4 md:bottom-8 md:right-8 right-4">
+    <div className="fixed bottom-4 md:bottom-8 md:right-8 right-4 z-50">
       <div className="relative flex">
         <Button content="Je veux ma PAC" className="relative" />
         <div className="absolute right-3">

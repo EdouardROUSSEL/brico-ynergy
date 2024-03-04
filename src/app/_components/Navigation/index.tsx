@@ -10,7 +10,7 @@ export default function Navbar() {
   const currentRoute = usePathname();
 
   return (
-    <div className="fixed h-20 w-full top-0 z-40 bg-white shadow-sm">
+    <div className="sticky h-20 w-full top-0 z-40 bg-white shadow-sm">
       <div className="container mx-auto px-4 h-full">
         <div className="flex justify-between items-center h-full">
           <div className="w-5 h-4 black lg:hidden"></div>
