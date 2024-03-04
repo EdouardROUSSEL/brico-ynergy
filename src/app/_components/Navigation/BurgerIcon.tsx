@@ -28,7 +28,7 @@ export default function BurgerIcon() {
           width="20"
           height="20"
           src="https://img.icons8.com/ios-filled/50/menu--v6.png"
-          alt="menu--v6"
+          alt="menu"
         />
       </button>
       {isOpen && (
