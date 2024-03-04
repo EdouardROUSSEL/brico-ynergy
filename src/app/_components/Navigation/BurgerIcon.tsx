@@ -24,7 +24,7 @@ export default function BurgerIcon() {
         aria-haspopup="true"
         onClick={toggleDropdown}
       >
-        <img
+        <Image
           width="20"
           height="20"
           src="https://img.icons8.com/ios-filled/50/menu--v6.png"
@@ -51,7 +51,7 @@ export default function BurgerIcon() {
                 onClick={toggleDropdownSolution}
               >
                 Nos solutions
-                <img
+                <Image
                   width="12"
                   height="12"
                   src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
@@ -77,7 +77,7 @@ export default function BurgerIcon() {
                 </Link>
                 <Link href="/chauffage/pompe-a-chaleur">
                   <div className="flex items-center pl-7 py-2">
-                    <img
+                    <Image
                       width="8"
                       height="8"
                       src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
@@ -100,7 +100,7 @@ export default function BurgerIcon() {
                 </Link>
                 <Link href="/solaire/photovoltaique">
                   <div className="flex items-center pl-7 py-2">
-                    <img
+                    <Image
                       width="8"
                       height="8"
                       src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"

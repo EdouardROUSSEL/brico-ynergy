@@ -61,7 +61,7 @@ export default function Dropdown() {
             </Link>
             <Link href="/chauffage/pompe-a-chaleur">
               <div className="flex items-center pl-7 py-2">
-                <img
+                <Image
                   width="8"
                   height="8"
                   src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
@@ -84,7 +84,7 @@ export default function Dropdown() {
             </Link>
             <Link href="/solaire/photovoltaique">
               <div className="flex items-center pl-7 py-2">
-                <img
+                <Image
                   width="8"
                   height="8"
                   src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"

@@ -74,22 +74,22 @@ export default function Home() {
             </div>
             <div className="flex w-full flex-wrap  items-start justify-between gap-4">
               <div className=" items-center justify-center gap-2 w-full flex flex-col text-gray-700 text-center p-2 flex-1 min-w-32">
-                <img
+                <Image
                   width="50"
                   height="50"
-                  src="../images/temperature.svg"
+                  src="../svg/temperature.svg"
                   alt="temperature--v1"
                 />
                 <div>
                   <p className="font-bold text-lg">Pour réduire</p>
-                  <p className="text-sm">ma facture d’énergie</p>
+                  <p className="text-sm">ma facture d&apos;énergie</p>
                 </div>
               </div>
               <div className="items-center justify-center gap-2  flex flex-col text-gray-700 text-center p-2 flex-1 min-w-32">
-                <img
+                <Image
                   width="50"
                   height="50"
-                  src="../images/wallet.svg"
+                  src="../svg/wallet.svg"
                   alt="temperature--v1"
                 />
                 <div>
@@ -98,10 +98,10 @@ export default function Home() {
                 </div>
               </div>
               <div className=" items-center justify-center gap-2  flex flex-col text-gray-700 text-center p-2 flex-1 min-w-32">
-                <img
+                <Image
                   width="50"
                   height="50"
-                  src="../images/house.svg"
+                  src="../svg/house.svg"
                   alt="temperature--v1"
                 />
                 <div>
@@ -110,10 +110,10 @@ export default function Home() {
                 </div>
               </div>
               <div className=" items-center justify-center gap-2  flex flex-col text-gray-700 text-center p-2 flex-1 min-w-32">
-                <img
+                <Image
                   width="50"
                   height="50"
-                  src="../images/carbon.svg"
+                  src="../svg/carbon.svg"
                   alt="temperature--v1"
                 />
                 <div>
@@ -134,14 +134,14 @@ export default function Home() {
             backgroundSize: "cover",
           }}
         >
-          <div className="flex flex-col bg-black/20 p-8 gap-4">
-            <h6 className="  w-full text-center text-white font-bold md:text-5xl text-2xl ">
-              Projet d'installation d'une pompe à chaleur
+          <div className="flex flex-col bg-black/20 p-8">
+            <h6 className="w-full text-center text-white font-bold md:text-5xl text-2xl py-8">
+              Projet d&apos;installation d&apos;une pompe à chaleur
             </h6>
-            <div className="w-full flex justify-around px-8">
-              <div className="w-1/3 flex items-start">
+            <div className="w-full flex justify-around items-start flex-wrap p-8">
+              <div className="min-w-[480px] flex items-start justify-center">
                 <h3
-                  className="font-semibold md:text-2xl text-gray-700 text-xl bg-white transform rotate-180 align-top text-left py-4 px-2 rounded-br-lg rounded-tr-lg  tracking-wider"
+                  className="font-semibold md:text-3xl text-gray-700 text-2xl bg-white transform rotate-180 align-top text-left py-4 px-2 rounded-br-lg rounded-tr-lg tracking-wider border-l-4 border-red-500"
                   style={{
                     writingMode: "vertical-rl",
                     textOrientation: "mixed",
@@ -150,17 +150,31 @@ export default function Home() {
                   Situation
                 </h3>
 
-                <div className="space-y-8 p-8 bg-white shadow-2xl">
-                  <h6 className="text-center md:text-lg font-semibold w-2/3 ">
-                    Maison individuelle de 120 m² construite en 1979 et classée
-                    D
-                  </h6>
-                  <ul className="space-y-4 w-full">
+                <div className="space-y-8 p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl">
+                  <ul className="space-y-8 max-w-80">
                     <li className="flex gap-4 items-center text-lg font-medium">
                       <Image
                         width={25}
                         height={25}
-                        src={"/images/house-people.svg"}
+                        src={"/svg/superficie.svg"}
+                        alt="couple"
+                      />
+                      <p>Maison individuelle 120 m²</p>
+                    </li>
+                    <li className="flex gap-4 items-center text-lg font-medium">
+                      <Image
+                        width={25}
+                        height={25}
+                        src={"/svg/build.svg"}
+                        alt="couple"
+                      />
+                      <p>Construite en 1979 et classée D</p>
+                    </li>
+                    <li className="flex gap-4 items-center text-lg font-medium">
+                      <Image
+                        width={25}
+                        height={25}
+                        src={"/svg/house-people.svg"}
                         alt="couple"
                       />
                       <p>Couple</p>
@@ -169,7 +183,7 @@ export default function Home() {
                       <Image
                         width={25}
                         height={25}
-                        src={"/images/wallet.svg"}
+                        src={"/svg/wallet.svg"}
                         alt="wallet"
                       />
                       <p>Revenus annuels de 31 500 €</p>
@@ -178,7 +192,7 @@ export default function Home() {
                       <Image
                         width={25}
                         height={25}
-                        src={"/images/localisation.svg"}
+                        src={"/svg/localisation.svg"}
                         alt="localisation"
                       />
                       <p>Habitant en Charente Maritimes</p>
@@ -187,23 +201,59 @@ export default function Home() {
                       <Image
                         width={25}
                         height={25}
-                        src={"/images/category.svg"}
+                        src={"/svg/category.svg"}
                         alt="category"
                       />
                       <div className="flex flex-col">
                         <p>Catégorie de ressources* : revenus très modestes</p>
                         <p className="text-xs font-light italic">
-                          *barême MaPrimeRénov'
+                          *barême MaPrimeRénov&apos;
                         </p>
                       </div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="w-1/3  space-y-8 justify-center items-center flex flex-col px-8 py-16">
-                <h3 className="font-semibold md:text-2xl text-gray-700 text-xl text-center">
-                  Coût d'installation
+              <div className="min-w-[480px] flex items-start justify-center">
+                <h3
+                  className="font-semibold md:text-3xl text-gray-700 text-2xl bg-white transform rotate-180 align-top text-left py-4 px-2 rounded-br-lg rounded-tr-lg tracking-wider border-l-4 border-red-500"
+                  style={{
+                    writingMode: "vertical-rl",
+                    textOrientation: "mixed",
+                  }}
+                >
+                  Coût des travaux
                 </h3>
+
+                <div className="space-y-8 p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl">
+                  <Image
+                    src="/images/aide.png"
+                    width={200}
+                    height={200}
+                    alt="aide au financement"
+                  />
+                  <ul className="space-y-8 max-w-80 justify-center flex flex-col items-center">
+                    <li className="flex gap-4 items-center text-lg font-medium">
+                      <p className="font-bold">13 620 €</p>
+                      <p>TTC</p>
+                    </li>
+                    <li className="flex gap-4 items-start text-lg font-medium">
+                      <p className="font-bold">9 000 € </p>
+                      <p>d’aides</p>
+                    </li>
+                    <li className="flex gap-4 items-start text-lg font-medium">
+                      <p>Total à financer : </p>
+                      <p className="font-bold">4 620 €</p>
+                    </li>
+                    <li>
+                      <p className="text-center text-sm">
+                        La réglementation liée à la rénovation énergétique et
+                        les aides dédiées évoluent régulièrement - données à
+                        titre indicatif -
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
