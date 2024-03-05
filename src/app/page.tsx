@@ -55,15 +55,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white items-center flex w-full h-auto">
+        <div className="bg-white items-center  w-full h-auto grid grid-cols-6 grid-rows-3 relative">
           <Image
-            width={1000}
-            height={1000}
+            fill
+            objectFit="cover"
             src={"/images/pompe-chaleur.jpg"}
             alt="heat pump"
-            className="h-full md:block hidden w-1/3 object-cover"
+            className="md:block hidden row-end-4 col-end-3 row-start-1 col-start-1"
           />
-          <div className="p-5 md:p-8 flex flex-col items-center justify-between h-full md:w-2/3 w-full gap-8">
+          <div className="p-5 md:p-8 flex flex-col items-center justify-between h-full md:w-2/3 w-full gap-8 row-end-4 col-end-7 row-start-1 md:col-start-3 col-start-1 place-self-center">
             <div className="justify-center flex flex-col items-center space-y-2">
               <h3 className="text-3xl font-semi text-center">Découvrir</h3>
               <div className="flex flex-col">
