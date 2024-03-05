@@ -8,15 +8,15 @@ export default function Logo() {
         alt="logo-brico"
         width={100}
         height={100}
-        className="md:w-20 w-16 md:pr-1"
+        className="md:w-20 w-16 md:pr-1 bg-white"
       />
       <p className="text-xs md:text-sm md:px-0 px-1">avec</p>
       <Image
         src="/images/ynergie.webp"
-        alt="logo-brico"
+        alt="logo-ynergie"
         width={150}
         height={100}
-        className="md:w-24 w-20"
+        className="md:w-24 w-20x "
       />
     </div>
   );

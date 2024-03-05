@@ -5,7 +5,7 @@ import Logo from "./_components/Navigation/Logo";
 export default function Home() {
   return (
     <main className="bg-[#EEEEEE]">
-      <section className="lg:container lg:mx-auto lg:px-4 flex flex-col space-y-8">
+      <section className="lg:container lg:mx-auto lg:px-4 flex flex-col space-y-8 pb-8">
         <div
           className="bg-[length:250%] md:bg-[length:120%] lg:bg-[length:120%] xl:bg-[length:100%] "
           style={{
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white items-center  w-full h-auto grid grid-cols-6 grid-rows-3 relative">
+        <div className="bg-white items-center w-full h-auto grid grid-cols-6 grid-rows-3 relative">
           <Image
             fill
             objectFit="cover"
@@ -65,9 +65,9 @@ export default function Home() {
           />
           <div className="p-5 md:p-8 flex flex-col items-center justify-between h-full md:w-2/3 w-full gap-8 row-end-4 col-end-7 row-start-1 md:col-start-3 col-start-1 place-self-center">
             <div className="justify-center flex flex-col items-center space-y-2">
-              <h3 className="text-3xl font-semi text-center">Découvrir</h3>
+              <h3 className="text-3xl font-semibold text-center">Découvrir</h3>
               <div className="flex flex-col">
-                <h6 className="text-2xl font-extrabold text-center">
+                <h6 className="text-3xl font-semibold text-center text-[#DF371E]">
                   la pompe à chaleur Air / Eau
                 </h6>
               </div>
@@ -125,7 +125,6 @@ export default function Home() {
             <Button content="En savoir plus" />
           </div>
         </div>
-
         <div
           className=" w-full h-auto bg-[length:100%]  "
           style={{
@@ -262,8 +261,35 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="bg-white items-center w-full h-auto grid grid-cols-6 grid-rows-3 relative">
+          <Image
+            fill
+            objectFit="cover"
+            src={"/images/pompe-chaleur.jpg"}
+            alt="heat pump"
+            className="md:block hidden row-end-4 col-end-7 row-start-1 col-start-5 "
+          />
+          <div className="p-5 md:p-8 flex flex-col justify-between h-full w-full gap-8 row-end-6 md:col-end-5 col-end-7 row-start-1 md:col-start-1 col-start-1">
+            <div className="justify-center flex flex-col  space-y-4">
+              <h3 className="text-3xl font-semibold">
+                Quelles sont
+                <p className="text-[#DF371E]">les aides financières ?</p>
+              </h3>
+              <div className="space-y-2">
+                <p>
+                  Difficile de s’y retrouver avec toutes les aides financières
+                  qui existent !
+                </p>
+                <p>
+                  MaPrimeRenov&apos;, la prime énergie CEE, l&apos;éco-prêt à
+                  taux zéro,...
+                </p>
+              </div>
+            </div>
+            <Button content="En savoir plus" className="place-self-center" />
+          </div>
+        </div>
       </section>
-      <section className="h-screen"></section>
     </main>
   );
 }

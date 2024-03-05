@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./_components/Navigation";
 import PACbutton from "./_components/PACbutton";
+import Footer from "./_components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Navigation />
         <PACbutton />
         {children}
+        <Footer />
       </body>
     </html>
   );
