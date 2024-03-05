@@ -227,8 +227,8 @@ export default function Home() {
 
                 <div className=" p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl space-y-4 md:space-y-8">
                   <h3 className="max-w-80 font-medium text-lg text-center">
-                    Installation d'une pompe à chaleur Air-Eau avec production
-                    d'eau chaude sanitaire
+                    Installation d&apos;une pompe à chaleur Air-Eau avec
+                    production d&apos;eau chaude sanitaire
                   </h3>
                   <Image
                     src="/images/aide.png"
