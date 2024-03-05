@@ -134,14 +134,14 @@ export default function Home() {
             backgroundSize: "cover",
           }}
         >
-          <div className="flex flex-col bg-black/20 p-8">
-            <h6 className="w-full text-center text-white font-bold md:text-5xl text-2xl py-8">
+          <div className="flex flex-col bg-black/20 p-4 md:p-8 ">
+            <h6 className="w-full text-center text-white font-bold md:text-5xl text-4xl py-8 [text-shadow:_0_1px_0_rgb(0_0_0_/_15%)]">
               Projet d&apos;installation d&apos;une pompe à chaleur
             </h6>
-            <div className="w-full flex justify-around items-start flex-wrap p-8">
-              <div className="min-w-[480px] flex items-start justify-center">
+            <div className="w-full flex justify-center items-start flex-wrap py-8 gap-8">
+              <div className="md:min-w-[480px] min-w-[360px] flex items-start justify-center">
                 <h3
-                  className="font-semibold md:text-3xl text-gray-700 text-2xl bg-white transform rotate-180 align-top text-left py-4 px-2 rounded-br-lg rounded-tr-lg tracking-wider border-l-4 border-red-500"
+                  className="font-semibold md:text-3xl text-gray-700 text-xl bg-white transform rotate-180 align-top text-left py-4 px-2 rounded-br-lg rounded-tr-lg tracking-wider border-l-4 border-red-500 "
                   style={{
                     writingMode: "vertical-rl",
                     textOrientation: "mixed",
@@ -150,9 +150,9 @@ export default function Home() {
                   Situation
                 </h3>
 
-                <div className="space-y-8 p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl">
-                  <ul className="space-y-8 max-w-80">
-                    <li className="flex gap-4 items-center text-lg font-medium">
+                <div className=" p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl md:text-lg">
+                  <ul className="md:space-y-8 space-y-4 max-w-80">
+                    <li className="flex gap-4 items-center font-medium">
                       <Image
                         width={25}
                         height={25}
@@ -161,7 +161,7 @@ export default function Home() {
                       />
                       <p>Maison individuelle 120 m²</p>
                     </li>
-                    <li className="flex gap-4 items-center text-lg font-medium">
+                    <li className="flex gap-4 items-center font-medium">
                       <Image
                         width={25}
                         height={25}
@@ -170,7 +170,7 @@ export default function Home() {
                       />
                       <p>Construite en 1979 et classée D</p>
                     </li>
-                    <li className="flex gap-4 items-center text-lg font-medium">
+                    <li className="flex gap-4 items-center font-medium">
                       <Image
                         width={25}
                         height={25}
@@ -179,7 +179,7 @@ export default function Home() {
                       />
                       <p>Couple</p>
                     </li>
-                    <li className="flex gap-4 items-center text-lg font-medium">
+                    <li className="flex gap-4 items-center font-medium">
                       <Image
                         width={25}
                         height={25}
@@ -188,7 +188,7 @@ export default function Home() {
                       />
                       <p>Revenus annuels de 31 500 €</p>
                     </li>
-                    <li className="flex gap-4 items-center text-lg font-medium">
+                    <li className="flex gap-4 items-center font-medium">
                       <Image
                         width={25}
                         height={25}
@@ -197,7 +197,7 @@ export default function Home() {
                       />
                       <p>Habitant en Charente Maritimes</p>
                     </li>
-                    <li className="flex gap-4 items-start text-lg font-medium">
+                    <li className="flex gap-4 items-start font-medium">
                       <Image
                         width={25}
                         height={25}
@@ -214,7 +214,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className="min-w-[480px] flex items-start justify-center">
+              <div className="md:min-w-[480px] min-w-[360px] flex items-start justify-center">
                 <h3
                   className="font-semibold md:text-3xl text-gray-700 text-2xl bg-white transform rotate-180 align-top text-left py-4 px-2 rounded-br-lg rounded-tr-lg tracking-wider border-l-4 border-red-500"
                   style={{
@@ -225,14 +225,18 @@ export default function Home() {
                   Coût des travaux
                 </h3>
 
-                <div className="space-y-8 p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl">
+                <div className=" p-8 bg-white shadow-2xl flex flex-col justify-center items-center rounded-r-xl rounded-bl-xl space-y-4 md:space-y-8">
+                  <h3 className="max-w-80 font-medium text-lg text-center">
+                    Installation d'une pompe à chaleur Air-Eau avec production
+                    d'eau chaude sanitaire
+                  </h3>
                   <Image
                     src="/images/aide.png"
                     width={200}
                     height={200}
                     alt="aide au financement"
                   />
-                  <ul className="space-y-8 max-w-80 justify-center flex flex-col items-center">
+                  <ul className="space-y-4 md:space-y-8 max-w-80 justify-center flex flex-col items-center">
                     <li className="flex gap-4 items-center text-lg font-medium">
                       <p className="font-bold">13 620 €</p>
                       <p>TTC</p>
