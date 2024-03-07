@@ -28,7 +28,7 @@ export default function BurgerIcon() {
           width="20"
           height="20"
           src="https://img.icons8.com/ios-filled/50/menu--v6.png"
-          alt="menu"
+          alt="menu-burger"
         />
       </button>
       {isOpen && (
@@ -81,7 +81,7 @@ export default function BurgerIcon() {
                       width="8"
                       height="8"
                       src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
-                      alt="expand-arrow--v1"
+                      alt="expand-arrow--v2"
                       style={{ transform: "rotate(270deg)" }}
                     />
                     <p className="text-sm pl-3  ">Pompe à chaleur</p>
@@ -104,7 +104,7 @@ export default function BurgerIcon() {
                       width="8"
                       height="8"
                       src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
-                      alt="expand-arrow--v1"
+                      alt="expand-arrow--v3"
                       style={{ transform: "rotate(270deg)" }}
                     />
                     <p className="text-sm pl-3 ">Photovoltaique</p>
