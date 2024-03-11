@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#222222] text-white flex flex-col items-center pt-8 p-4  space-y-8 md:text-start text-center z-40 relative">
       <div className="flex justify-around w-full flex-col md:flex-row items-center space-y-8 md:space-y-0 md:items-start">
-        <div className="flex  flex-col justify-center items-center gap-y-4">
+        <div className="flex flex-col justify-center items-center gap-y-4">
           <div className="flex items-center">
             <Image
               src="/images/brico.webp"
