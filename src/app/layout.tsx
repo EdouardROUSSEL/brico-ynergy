@@ -8,7 +8,7 @@ import Footer from "./_components/Footer";
 
 import Image from "next/image";
 import Button from "./_components/Navigation/Button";
-import Hh from "./_components/Navigation/Hh";
+import Hh from "./_components/Hh";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -94,6 +94,7 @@ export default function RootLayout({
                   <Image
                     src={"/images/hh.webp"}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="pompe à chaleur"
                     className="object-cover"
                   />
@@ -175,10 +176,12 @@ export default function RootLayout({
               <div className="flex w-full flex-col gap-5 md:flex-row md:gap-8 ">
                 <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
                   <Image
-                    src={"/images/ynergieetmoi.webp"}
+                    src={"/images/search2.webp"}
                     fill
                     alt="pompe à chaleur"
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ transform: "scaleX(-1)" }}
                   />
                 </div>
                 <Image
@@ -186,7 +189,7 @@ export default function RootLayout({
                   width={700}
                   height={500}
                   alt="pompe à chaleur"
-                  className="block  w-full rounded-3xl object-cover shadow-lg md:hidden"
+                  className="block w-full rounded-3xl object-cover shadow-lg md:hidden"
                 />
                 <div className="flex h-fit w-full flex-col items-start space-y-8 overflow-hidden rounded-2xl bg-white p-8 shadow-lg md:rounded-3xl">
                   <div className=" rounded-lg bg-[#F7981C] px-4 py-2 text-sm font-semibold uppercase text-white">
@@ -360,6 +363,7 @@ export default function RootLayout({
                   <Image
                     src={"/images/economy.webp"}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="pompe à chaleur"
                     className="object-cover "
                   />
