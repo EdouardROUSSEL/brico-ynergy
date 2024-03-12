@@ -41,7 +41,7 @@ export default function RootLayout({
             <Hh />
             <div className="grid-col-1 grid-row-2 grid w-full auto-rows-min space-y-5 md:space-y-8">
               <div className="flex w-full flex-col space-y-5 md:flex-row md:gap-8 md:space-y-0">
-                <div className=" flex h-fit w-full flex-col items-start space-y-4 rounded-2xl bg-white p-8 shadow-lg md:rounded-3xl">
+                <div className=" flex h-fit w-1/2 flex-col items-start space-y-4 rounded-2xl bg-white p-8 shadow-lg md:rounded-3xl">
                   <div className=" rounded-lg bg-[#F7981C] px-4 py-2 text-sm font-semibold uppercase text-white">
                     Découvrir
                   </div>
@@ -90,7 +90,7 @@ export default function RootLayout({
                     />
                   </div>
                 </div>
-                <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
+                <div className="relative hidden h-full w-1/2 overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
                   <Image
                     src={"/images/hh.webp"}
                     fill
