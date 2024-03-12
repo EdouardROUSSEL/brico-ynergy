@@ -35,7 +35,7 @@ export default function Dropdown() {
             ? "text-[#DF371E] underline decoration-2 underline-offset-8"
             : ""
         }`}
-        id="menu-button"
+        id="menu burger"
         aria-expanded={isOpen}
         aria-haspopup="true"
         onClick={toggleDropdown}
@@ -78,7 +78,7 @@ export default function Dropdown() {
                 width="8"
                 height="8"
                 src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
-                alt="expand-arrow--v1"
+                alt="arrow icon"
                 style={{ transform: "rotate(270deg)" }}
               />
               <p className="pl-3 text-sm  ">Pompe à chaleur</p>
@@ -99,7 +99,7 @@ export default function Dropdown() {
                 width="8"
                 height="8"
                 src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
-                alt="expand-arrow--v1"
+                alt="arrow icon"
                 style={{ transform: "rotate(270deg)" }}
               />
               <p className="pl-3 text-sm ">Photovoltaique</p>

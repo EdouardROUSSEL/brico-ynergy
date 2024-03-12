@@ -7,7 +7,7 @@ export default function Home() {
         <div
           className="rounded-2xl bg-[length:250%] md:rounded-3xl md:bg-[length:120%] lg:bg-[length:120%] xl:bg-[length:100%]"
           style={{
-            backgroundImage: "url(./../images/hh.jpg)",
+            backgroundImage: "url(./../images/house.webp)",
             backgroundPosition: "68% 66%",
           }}
         >
@@ -82,7 +82,7 @@ export default function Home() {
                       height="20"
                       src="/images/verifier.png"
                       alt=""
-                      className="w-4  pt-1"
+                      className="w-4 pt-1"
                     />
                     Produit fourni posé par un professionnel RGE
                   </li>
@@ -105,14 +105,14 @@ export default function Home() {
             </div>
             <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
               <Image
-                src={"/images/heat-pump3.jpeg"}
+                src={"/images/hh.webp"}
                 fill
                 alt="pompe à chaleur"
                 className="object-cover"
               />
             </div>
             <Image
-              src={"/images/heat-pump3.jpeg"}
+              src={"/images/hh.webp"}
               width={1000}
               height={1000}
               alt="pompe à chaleur"
@@ -186,16 +186,16 @@ export default function Home() {
           <div className="flex w-full flex-col gap-5 md:flex-row md:gap-8 ">
             <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
               <Image
-                src={"/images/ynergie&moi.jpeg"}
+                src={"/images/ynergieetmoi.webp"}
                 fill
                 alt="pompe à chaleur"
                 className="object-cover"
               />
             </div>
             <Image
-              src={"/images/ynergie&moi.jpeg"}
-              width={1000}
-              height={1000}
+              src={"/images/ynergieetmoi.webp"}
+              width={700}
+              height={500}
               alt="pompe à chaleur"
               className="block  w-full rounded-3xl object-cover shadow-lg md:hidden"
             />
@@ -255,7 +255,7 @@ export default function Home() {
         <div
           className="grid-col-1 grid-row-2 md:grid-row-1 grid w-full overflow-hidden rounded-lg shadow-2xl md:rounded-3xl"
           style={{
-            backgroundImage: "url(./../images/instalation.jpeg)",
+            backgroundImage: "url(./../images/instalation.webp)",
             backgroundPosition: "68% 66%",
           }}
         >
@@ -364,7 +364,7 @@ export default function Home() {
             </div>
             <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
               <Image
-                src={"/images/economy.jpeg"}
+                src={"/images/economy.webp"}
                 fill
                 alt="pompe à chaleur"
                 className="object-cover "
