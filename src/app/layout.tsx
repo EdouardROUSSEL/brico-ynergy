@@ -185,11 +185,12 @@ export default function RootLayout({
                   />
                 </div>
                 <Image
-                  src={"/images/ynergieetmoi.webp"}
+                  src={"/images/search2.webp"}
                   width={700}
                   height={500}
                   alt="pompe à chaleur"
                   className="block w-full rounded-3xl object-cover shadow-lg md:hidden"
+                  style={{ transform: "scaleX(-1)" }}
                 />
                 <div className="flex h-fit w-full flex-col items-start space-y-8 overflow-hidden rounded-2xl bg-white p-8 shadow-lg md:rounded-3xl">
                   <div className=" rounded-lg bg-[#F7981C] px-4 py-2 text-sm font-semibold uppercase text-white">
