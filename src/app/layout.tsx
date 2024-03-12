@@ -174,7 +174,7 @@ export default function RootLayout({
 
             <div className="grid-col-1 grid-row-1 grid w-full ">
               <div className="flex w-full flex-col gap-5 md:flex-row md:gap-8 ">
-                <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
+                <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto md:w-1/2">
                   <Image
                     src={"/images/search2.webp"}
                     fill
@@ -192,7 +192,7 @@ export default function RootLayout({
                   className="block w-full rounded-3xl object-cover shadow-lg md:hidden"
                   style={{ transform: "scaleX(-1)" }}
                 />
-                <div className="flex h-fit w-full flex-col items-start space-y-8 overflow-hidden rounded-2xl bg-white p-8 shadow-lg md:rounded-3xl">
+                <div className="flex h-fit w-full flex-col items-start space-y-8 overflow-hidden rounded-2xl bg-white p-8 shadow-lg md:w-1/2 md:rounded-3xl">
                   <div className=" rounded-lg bg-[#F7981C] px-4 py-2 text-sm font-semibold uppercase text-white">
                     J&apos;AIME FAIRE, MAIS JE FAIS FAIRE
                   </div>
@@ -333,7 +333,7 @@ export default function RootLayout({
 
             <div className="grid-col-1 grid-row-1 grid w-full ">
               <div className="flex h-full w-full flex-col-reverse gap-4 md:flex-row  md:gap-8">
-                <div className=" flex h-full w-full flex-col  items-start space-y-8 rounded-2xl bg-white p-5 shadow-lg  md:rounded-3xl md:p-8">
+                <div className=" flex h-full w-full flex-col items-start  space-y-8 rounded-2xl bg-white p-5 shadow-lg md:w-1/2  md:rounded-3xl md:p-8">
                   <div className=" rounded-lg bg-[#F7981C] px-4 py-2 text-sm font-semibold uppercase text-white">
                     FAQ
                   </div>
@@ -360,7 +360,7 @@ export default function RootLayout({
                     className="place-self-center"
                   />
                 </div>
-                <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto">
+                <div className="relative hidden h-full w-full overflow-auto rounded-3xl shadow-lg md:block md:h-auto md:w-1/2">
                   <Image
                     src={"/images/economy.webp"}
                     fill
@@ -369,6 +369,14 @@ export default function RootLayout({
                     className="object-cover "
                   />
                 </div>
+                <Image
+                  src={"/images/economy.webp"}
+                  width={300}
+                  height={300}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="pompe à chaleur"
+                  className="block h-full w-full rounded-xl object-cover md:hidden"
+                />
               </div>
             </div>
           </section>
