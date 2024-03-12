@@ -10,26 +10,26 @@ export default function Navbar() {
   const currentRoute = usePathname();
 
   return (
-    <div className="sticky h-20 w-full z-40 top-0 bg-white shadow-sm">
-      <div className="container mx-auto px-4 h-full">
-        <div className="flex justify-between items-center h-full">
-          <div className="w-5 h-4 black lg:hidden"></div>
+    <div className="sticky top-0 z-40 h-20 w-full bg-white shadow-sm">
+      <div className="container mx-auto h-full px-4">
+        <div className="flex h-full items-center justify-between">
+          <div className="black h-4 w-5 lg:hidden"></div>
           <Link href="/">
             <Logo />
           </Link>
 
-          <ul className="hidden lg:flex gap-6">
+          <ul className="hidden gap-6 lg:flex">
             <li>
               <Link href="/">
                 <Dropdown />
               </Link>
             </li>
             <li>
-              <Link href="/les-aides-financieres">
+              <Link href="/#">
                 <p
                   className={
                     currentRoute === "/les-aides-financieres"
-                      ? "underline underline-offset-8 text-[#DF371E] decoration-2"
+                      ? "text-[#DF371E] underline decoration-2 underline-offset-8"
                       : ""
                   }
                 >
@@ -38,11 +38,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/a-propos">
+              <Link href="/#">
                 <p
                   className={
                     currentRoute === "/a-propos"
-                      ? "underline underline-offset-8 text-[#DF371E] decoration-2"
+                      ? "text-[#DF371E] underline decoration-2 underline-offset-8"
                       : ""
                   }
                 >
@@ -53,7 +53,7 @@ export default function Navbar() {
             <li></li>
           </ul>
           <div className="hidden lg:flex">
-            <Link href="/mon-compte">
+            <Link href="/#">
               <Button content="Mon compte" />
             </Link>
           </div>

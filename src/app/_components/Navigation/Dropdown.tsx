@@ -1,21 +1,38 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null); // Préciser le type de référence ou null
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         type="button"
         className={`inline-flex w-full justify-center gap-2 ${
           isOpen
-            ? "underline underline-offset-8 text-[#DF371E] decoration-2"
+            ? "text-[#DF371E] underline decoration-2 underline-offset-8"
             : ""
         }`}
         id="menu-button"
@@ -25,9 +42,7 @@ export default function Dropdown() {
       >
         Nos solutions
         <svg
-          className={`-mr-1 h-5 w-5 ${
-            isOpen ? "text-[#DF371E]" : "text-gray-400"
-          }`}
+          className={`-mr-1 h-5 w-5 ${isOpen ? "text-[#DF371E]" : "text-gray-400"}`}
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
@@ -48,52 +63,47 @@ export default function Dropdown() {
           tabIndex={-1}
         >
           <div className=" p-4 text-base">
-            <Link href="/chauffage">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/images/chauffage.gif"
-                  alt="logo-brico"
-                  width={20}
-                  height={20}
-                />
-                <p className="pt-1">Chauffage</p>
-              </div>
-            </Link>
-            <Link href="/chauffage/pompe-a-chaleur">
-              <div className="flex items-center pl-7 py-2">
-                <Image
-                  width="8"
-                  height="8"
-                  src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
-                  alt="expand-arrow--v1"
-                  style={{ transform: "rotate(270deg)" }}
-                />
-                <p className="text-sm pl-3  ">Pompe à chaleur</p>
-              </div>
-            </Link>
-            <Link href="/solaire">
-              <div className="flex items-center gap-2 ">
-                <Image
-                  src="/images/solaire.gif"
-                  alt="logo-brico"
-                  width={20}
-                  height={20}
-                />
-                <p>Solaire</p>
-              </div>
-            </Link>
-            <Link href="/solaire/photovoltaique">
-              <div className="flex items-center pl-7 py-2">
-                <Image
-                  width="8"
-                  height="8"
-                  src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
-                  alt="expand-arrow--v1"
-                  style={{ transform: "rotate(270deg)" }}
-                />
-                <p className="text-sm pl-3 ">Photovoltaique</p>
-              </div>
-            </Link>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/images/chauffage.gif"
+                alt="logo-brico"
+                width={20}
+                height={20}
+              />
+              <p className="pt-1">Chauffage</p>
+            </div>
+
+            <div className="flex items-center py-2 pl-7">
+              <Image
+                width="8"
+                height="8"
+                src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
+                alt="expand-arrow--v1"
+                style={{ transform: "rotate(270deg)" }}
+              />
+              <p className="pl-3 text-sm  ">Pompe à chaleur</p>
+            </div>
+
+            <div className="flex items-center gap-2 ">
+              <Image
+                src="/images/solaire.gif"
+                alt="logo-brico"
+                width={20}
+                height={20}
+              />
+              <p>Solaire</p>
+            </div>
+
+            <div className="flex items-center py-2 pl-7">
+              <Image
+                width="8"
+                height="8"
+                src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png"
+                alt="expand-arrow--v1"
+                style={{ transform: "rotate(270deg)" }}
+              />
+              <p className="pl-3 text-sm ">Photovoltaique</p>
+            </div>
           </div>
         </div>
       )}
