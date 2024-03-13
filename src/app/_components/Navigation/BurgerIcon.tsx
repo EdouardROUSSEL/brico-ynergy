@@ -49,7 +49,7 @@ export default function BurgerIcon() {
       </button>
       {isOpen && (
         <div
-          className="absolute right-4 top-16 z-10 w-11/12 origin-top-right divide-y rounded-md bg-white text-lg font-semibold shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="absolute right-4 top-[85px] z-10 w-11/12 origin-top-right divide-y rounded-md bg-white text-lg font-semibold shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"

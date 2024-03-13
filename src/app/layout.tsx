@@ -49,7 +49,7 @@ export default function RootLayout({
                     <p className="text-2xl font-bold md:text-3xl md:font-semibold">
                       La pompe à chaleur par&nbsp;
                       <span className="text-[#E6AF2E]">
-                        Brico dépôt et Ynergie
+                        Brico Dépôt et Ynergie
                       </span>
                     </p>
                     <ul className=" space-y-2 text-base">
@@ -104,7 +104,7 @@ export default function RootLayout({
                   width={1000}
                   height={1000}
                   alt="pompe à chaleur"
-                  className="rounded-2xl object-cover shadow-lg md:hidden "
+                  className="h-56 rounded-2xl object-cover shadow-lg md:hidden md:h-auto"
                 />
               </div>
               <div className="flex w-full flex-wrap justify-center space-y-5 md:flex-nowrap md:space-x-8 md:space-y-0">
@@ -145,7 +145,7 @@ export default function RootLayout({
                       width="60"
                       height="60"
                       src="../svg/house.svg"
-                      alt="Maison icon"
+                      alt="House icon"
                     />
                     <div className="space-y-1">
                       <p className="text-base font-bold md:text-xl">
@@ -189,7 +189,7 @@ export default function RootLayout({
                   width={700}
                   height={500}
                   alt="pompe à chaleur"
-                  className="block w-full rounded-3xl object-cover shadow-lg md:hidden"
+                  className="block h-56 w-full rounded-3xl object-cover shadow-lg md:hidden md:h-auto"
                   style={{ transform: "scaleX(-1)" }}
                 />
                 <div className="flex h-fit w-full flex-col items-start space-y-8 overflow-hidden rounded-2xl bg-white p-8 shadow-lg md:w-1/2 md:rounded-3xl">
@@ -269,32 +269,32 @@ export default function RootLayout({
                         <ul className="space-y-2 text-base font-semibold">
                           <li className="flex items-start gap-2 md:gap-4">
                             <Image
-                              width={65}
-                              height={65}
-                              src={"/svg/superficie.svg"}
-                              alt="superficie"
-                              className="w-6"
+                              width="20"
+                              height="20"
+                              src="/images/verifier.png"
+                              alt=""
+                              className="w-4  pt-1"
                             />
                             Pour une maison individuelle de 120m² construite en
                             1979 et classée D
                           </li>
                           <li className="flex items-start gap-2 md:gap-4">
                             <Image
-                              width={65}
-                              height={65}
-                              src={"/svg/house-people.svg"}
-                              alt="couple"
-                              className="w-6"
+                              width="20"
+                              height="20"
+                              src="/images/verifier.png"
+                              alt=""
+                              className="w-4  pt-1"
                             />
                             Un couple au revenus très modestes
                           </li>
                           <li className="flex items-start gap-2 md:gap-4">
                             <Image
-                              width={65}
-                              height={65}
-                              src={"/svg/localisation.svg"}
-                              alt="localisation"
-                              className="w-6"
+                              width="20"
+                              height="20"
+                              src="/images/verifier.png"
+                              alt=""
+                              className="w-4  pt-1"
                             />
                             Habitant en Charente Maritimes
                           </li>
@@ -375,7 +375,7 @@ export default function RootLayout({
                   height={300}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="pompe à chaleur"
-                  className="block h-full w-full rounded-xl object-cover md:hidden"
+                  className="block h-56 w-full rounded-xl object-cover md:hidden md:h-auto"
                 />
               </div>
             </div>
