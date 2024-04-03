@@ -9,6 +9,7 @@ import Footer from "./_components/Footer";
 import Image from "next/image";
 import Button from "./_components/Navigation/Button";
 import Hh from "./_components/Hh";
+import Link from "next/link";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -32,7 +33,21 @@ export default function RootLayout({
       <Head>
         <link rel="preload" href="./../images/house.webp" as="image" />
       </Head>
-      <body className={roboto.className}>
+      <body className="flex h-screen w-screen justify-center">
+        <div className="flex h-full w-full flex-col items-center justify-center">
+          <p>Site suspendu, vous pouvez me contacter via</p>
+          <Link href="mailto:edouard@0m-sudio" className="text-blue-600">
+            edouard@0m-sudio
+          </Link>
+        </div>
+        <footer className="absolute bottom-0 z-0 mb-2 text-sm drop-shadow-2xl">
+          Developed with ❤️ by{" "}
+          <Link href="https://0m.studio/" className="font-bold">
+            0m.studio
+          </Link>
+        </footer>
+      </body>
+      {/* <body className={roboto.className}>
         <Navigation />
         <PACbutton />
         {children}
@@ -382,7 +397,7 @@ export default function RootLayout({
           </section>
         </main>
         <Footer />
-      </body>
+      </body> */}
     </html>
   );
 }
